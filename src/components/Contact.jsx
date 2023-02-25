@@ -40,7 +40,7 @@ function Contact() {
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
             ></textarea>
 
-            <button className="text-zinc-50 bg-gradient-to-r from-cyan-500 to-emerald-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
+            <button className="text-zinc-50 bg-gradient-to-r from-cyan-500 to-emerald-500 px-6 py-3  mt-2 mb-40 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
               Enviar
             </button>
           </form>
