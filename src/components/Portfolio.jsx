@@ -6,37 +6,36 @@ import meteoroClima from "../assets/portfolio/meteoroClima.png";
 import toolKitsCrud from "../assets/portfolio/toolKitsCrud.png";
 
 function Portfolio() {
-    
   const portfolios = [
     {
       id: 1,
       src: seshat,
-      demo:'https://seshat-react.vercel.app/',
-      href:'s'
+      demo: "https://seshat-react.vercel.app/",
+      code: "https://github.com/SeshatWriters/seshat-react",
     },
     {
       id: 2,
       src: meteoroClima,
-      demo:'https://prevision-meteorologica.vercel.app/',
-      href:'s'
+      demo: "https://prevision-meteorologica.vercel.app/",
+      code: "https://github.com/AlexBecci/Prevision-meteorologica",
     },
     {
       id: 3,
       src: toolKitsCrud,
-      demo:'https://react-toolkits-crud.vercel.app/',
-      href:'s'
+      demo: "https://react-toolkits-crud.vercel.app/",
+      code: "https://github.com/AlexBecci/React-Toolkits-Crud",
     },
     {
       id: 4,
       src: rickAndMorty,
-      demo:'https://test-vercel-seven-theta.vercel.app/',
-      href:'s'
+      demo: "https://test-vercel-seven-theta.vercel.app/",
+      code: "https://github.com/AlexBecci/Info-Mortys-web",
     },
     {
       id: 5,
       src: fatefulDungeon,
-      demo:'https://alex-becci.itch.io/fateful-dungeon',
-      href:'s'
+      demo: "https://alex-becci.itch.io/fateful-dungeon",
+      code: "https://github.com/AlexBecci/Fateful-Dungeon",
     },
   ];
 
@@ -54,7 +53,7 @@ function Portfolio() {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src,demo }) => (
+          {portfolios.map(({ id, src, demo,code }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -63,14 +62,15 @@ function Portfolio() {
               />
               <div className="flex items-center justify-center">
                 <a href={demo}>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Demo
-                </button>
+                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                    Demo
+                  </button>
                 </a>
-
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Codigo
-                </button>
+                <a href={code}>
+                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                    Codigo
+                  </button>
+                </a>
               </div>
             </div>
           ))}

@@ -6,7 +6,7 @@ import reactImage from "../assets/reactImage.png";
 import tailwind from "../assets/tailwind.png";
 import typescript from "../assets/typescript.png";
 import c from "../assets/c.png";
-function Experience() {
+function Skills() {
   const techs = [
     {
       id: 1,
@@ -54,7 +54,7 @@ function Experience() {
 
   return (
     <div
-      name="experience"
+      name="skills"
       className="bg-gradient-to-b from-gray-800 to-black w-full h-screen"
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-zinc-50">
@@ -80,4 +80,4 @@ function Experience() {
   );
 }
 
-export default Experience;
+export default Skills;
