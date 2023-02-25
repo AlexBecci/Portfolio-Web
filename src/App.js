@@ -10,12 +10,12 @@ function App() {
   return (
     <div className="App">
       <NavBar />
+      <SocialLinks />
       <Home />
       <About />
       <Portfolio />
       <Skills />
       <Contact />
-      <SocialLinks />
     </div>
   );
 }
