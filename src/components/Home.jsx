@@ -14,7 +14,7 @@ function Home() {
           <h2 className="text-4xl sm:text-7xl font-bold text-zinc-50">
             TRAINEE/JUNIOR FULLSTACK DEVELOPER
           </h2>
-          <p className="text-gray-500 py-4 max-w-md">
+          <p className="text-zinc-300 py-4 max-w-md">
             Hola! Mi nombre es Alex, soy Full Stack developer, orientado mas al
             Front-End. Me encanta crear sitios web que brinden una experiencia
             de usuario única y satisfactoria, no solo desde lo visual sino
@@ -25,7 +25,7 @@ function Home() {
               to="portfolio"
               smooth
               duration={500}
-              className="group text-zinc-50 w-fit px-6 py-3 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 hover:cursor-pointer"
+              className="text-xl group text-zinc-50 w-fit px-6 py-3 flex items-center rounded-md bg-gradient-to-r from-slate-900 to-emerald-500 hover:cursor-pointer"
             >
               Portfolio
               <span className="group-hover:rotate-90 duration-300">
@@ -37,7 +37,7 @@ function Home() {
               href="/CV.pdf"
               smooth
               duration={500}
-              className=" mx-5 group text-zinc-50 w-fit px-6 py-3 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 hover:cursor-pointer"
+              className="text-xl  mx-5 group text-zinc-50 w-fit px-6 py-3 flex items-center rounded-md bg-gradient-to-r from-slate-900 to-emerald-500 hover:cursor-pointer"
             >
               Curriculum vitae
               <span className="group-hover:rotate-90 duration-300">

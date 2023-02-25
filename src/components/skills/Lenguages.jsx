@@ -41,8 +41,8 @@ function Lenguages() {
 
   return (
     <div className="">
-      <p className="text-2xl font-bold border-b-4 border-gray-500 p-2 inline">
-        Tecnologías
+      <p className="text-2xl font-bold border-b-4 border-yellow-500 p-2 inline">
+        Lenguajes
       </p>
       <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
         {languages.map(({ id, src, title, style }) => (
