@@ -13,7 +13,7 @@ import css from "../assets/css.png";
 import typescript from "../assets/typescript.png";
 import c from "../assets/c.png";
 
-function Skills2() {
+function Skills() {
   const techs = [
     {
       id: 1,
@@ -122,4 +122,4 @@ function Skills2() {
   );
 }
 
-export default Skills2;
+export default Skills;
