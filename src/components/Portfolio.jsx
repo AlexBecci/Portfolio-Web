@@ -1,4 +1,5 @@
 import React from "react";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import seshat from "../assets/portfolio/seshat.png";
 import fatefulDungeon from "../assets/portfolio/fatefulDungeon.png";
 import rickAndMorty from "../assets/portfolio/rickAndMorty.png";
@@ -8,81 +9,120 @@ import toolKitsCrud from "../assets/portfolio/toolKitsCrud.png";
 function Portfolio() {
   const portfolios = [
     {
-      title:'Seshat',
+      text: "Seshat es una plataforma del mundo social basada en narrativas",
+      style: "shadow-indigo-500",
+      title: "Seshat",
       id: 1,
       src: seshat,
       demo: "https://seshat-react.vercel.app/",
+      gradient: "to-indigo-500",
       code: "https://github.com/SeshatWriters/seshat-react",
     },
     {
-      title:'MeteoroClima',
+      text: "Aplicación para monitorizar el tiempo, utilizando la API de OpenWeatherMap",
+      style: "shadow-cyan-500",
+      title: "MeteoroClima",
       id: 2,
       src: meteoroClima,
       demo: "https://prevision-meteorologica.vercel.app/",
+      gradient: "to-cyan-500",
       code: "https://github.com/AlexBecci/Prevision-meteorologica",
     },
     {
-      title:'ToolsKitsCrud',
+      text: "Anotador básico de tareas aplicando Redux de forma básica e intuitiva.",
+      style: "shadow-yellow-500",
+      title: "ToolsKitsCrud",
       id: 3,
       src: toolKitsCrud,
       demo: "https://react-toolkits-crud.vercel.app/",
+      gradient: "to-yellow-500",
       code: "https://github.com/AlexBecci/React-Toolkits-Crud",
     },
     {
-      title:'Info Mortys',
+      text: "Pagina web consumiendo api de rick y morty utilizando la API de https://rickandmortyapi.com/",
+      style: "shadow-red-500",
+      title: "Info Mortys",
       id: 4,
       src: rickAndMorty,
       demo: "https://test-vercel-seven-theta.vercel.app/",
+      gradient: "to-red-500",
       code: "https://github.com/AlexBecci/Info-Mortys-web",
     },
     {
-      title:'Fateful Dungeon',
+      text: " Es un roguelike 2d sobre magia, en un futuro la idea sería que fuera multijugador (cooperativo).",
+      style: "shadow-slate-500",
+      title: "Fateful Dungeon",
       id: 5,
       src: fatefulDungeon,
       demo: "https://alex-becci.itch.io/fateful-dungeon",
       code: "https://github.com/AlexBecci/Fateful-Dungeon",
+      gradient: "to-slate-500",
     },
   ];
 
   return (
-    <div
-      name="portfolio"
-      className="bg-gradient-to-b from-black to-gray-800 w-full text-zinc-100 md:w-screen py-10"
-    >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full pb-72">
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-emerald-500">
-            Portafolio
-          </p>
-          <p className="py-6">Echa un vistazo a mis trabajos aquí</p>
+    <section className="text-zinc-300 body-font font0bold bg-gradient-to-b from-black to-gray-800 py-5">
+      <div className="container px-5 py-24 mx-auto">
+        <div className="flex flex-col text-center w-full mb-20">
+          <div>
+            <h1 className="sm:text-4xl text-3xl title-font mb-4 text-amber-100  font-bold inline border-b-4 border-emerald-500 ">
+              Portafolio
+            </h1>
+            <p className="lg:w-2/3 mx-auto leading-relaxed text-base  py-6">
+              Echa un vistazo a mis trabajos aquí
+            </p>
+          </div>
         </div>
-
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ title,id, src, demo,code }) => (
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
-              <p className="text-center text-lg font-semibold m-1">{title}</p>
-              <img
-                src={src}
-                alt=""
-                className="rounded-md duration-200 hover:scale-105"
-              />
-              <div className="flex items-center justify-center">
-                <a href={demo}>
-                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-yellow-500">
+        <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 px-10">
+          {portfolios.map(
+            ({ title, id, src, demo, code, style, text, gradient }) => (
+              <div class="p-4 md:w-1/3 sm:mb-0 mb-6 py-10">
+                <div class="rounded-lg h-64 overflow-hidden">
+                  <img
+                    alt="content"
+                    class="object-cover object-center h-full w-full"
+                    src={src}
+                  />
+                </div>
+                <h2 class="text-xl font-medium title-font text-amber-100 mt-5">
+                  {title}
+                </h2>
+                <p class="text-base leading-relaxed my-4">{text}</p>
+                <div className="flex">
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href={demo}
+                    smooth
+                    duration={500}
+                    className={`text-base  mx-2 group text-amber-100 w-fit px-6 py-3 flex items-center rounded-md bg-gradient-to-r from-slate-900 ${gradient} hover:cursor-pointer`}
+                  >
                     Demo
-                  </button>
-                </a>
-                <a href={code}>
-                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-yellow-500">
-                    Codigo
-                  </button>
-                </a>
+                    <span className="group-hover:rotate-90 duration-300">
+                      <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
+                    </span>
+                  </a>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href={code}
+                    smooth
+                    duration={500}
+                    className={`text-base  mx-2 ml-10 group text-amber-100 w-fit px-6 py-3 flex items-center rounded-md bg-gradient-to-r from-slate-900 ${gradient} hover:cursor-pointer`}
+                  >
+                    Code
+                    <span className="group-hover:rotate-90 duration-300">
+                      <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
+                    </span>
+                  </a>
+                </div>
               </div>
-            </div>
-          ))}
+            )
+          )}
         </div>
+        s
       </div>
-    </div>
+    </section>
   );
 }
 
