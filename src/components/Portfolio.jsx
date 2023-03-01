@@ -73,21 +73,21 @@ function Portfolio() {
             </p>
           </div>
         </div>
-        <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 px-10">
+        <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 px-10">
           {portfolios.map(
             ({ title, id, src, demo, code, style, text, gradient }) => (
-              <div class="p-4 md:w-1/3 sm:mb-0 mb-6 py-10">
-                <div class="rounded-lg h-64 overflow-hidden">
+              <div key={id} className="p-4 md:w-1/3 sm:mb-0 mb-6 py-10">
+                <div className={`rounded-lg h-64 overflow-hidden  shadow-md ${style}`}>
                   <img
                     alt="content"
-                    class="object-cover object-center h-full w-full"
+                    className="object-cover object-center h-full w-full"
                     src={src}
                   />
                 </div>
-                <h2 class="text-xl font-medium title-font text-amber-100 mt-5">
+                <h2 className="text-xl font-medium title-font text-amber-100 mt-5">
                   {title}
                 </h2>
-                <p class="text-base leading-relaxed my-4">{text}</p>
+                <p className="text-base leading-relaxed my-4">{text}</p>
                 <div className="flex">
                   <a
                     rel="noreferrer"
