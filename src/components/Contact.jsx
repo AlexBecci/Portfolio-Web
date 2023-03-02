@@ -26,7 +26,7 @@ function Contact() {
                 <div className="">
                   <label
                     for="name"
-                    className="leading-7 text-sm text-amber-100"
+                    className="leading-7 text-sm text-white"
                   >
                     Name
                   </label>
@@ -35,7 +35,7 @@ function Contact() {
                     type="text"
                     id="name"
                     name="name"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-emerald-500 bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-amber-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-emerald-500 bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>
               </div>
@@ -43,7 +43,7 @@ function Contact() {
                 <div className="">
                   <label
                     for="email"
-                    className="leading-7 text-sm text-amber-100"
+                    className="leading-7 text-sm text-white"
                   >
                     Email
                   </label>
@@ -52,7 +52,7 @@ function Contact() {
                     type="email"
                     id="email"
                     name="email"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-emerald-500 bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-amber-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-emerald-500 bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>
               </div>
@@ -60,7 +60,7 @@ function Contact() {
                 <div className="">
                   <label
                     for="message"
-                    className="leading-7 text-sm text-amber-100"
+                    className="leading-7 text-sm text-white"
                   >
                     Mensaje
                   </label>
@@ -69,7 +69,7 @@ function Contact() {
                     placeholder="Deja tu mensaje"
                     id="message"
                     name="message"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-emerald-500 bg-transparent focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-amber-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-emerald-500 bg-transparent focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-white py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                   ></textarea>
                 </div>
               </div>
