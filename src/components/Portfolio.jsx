@@ -65,7 +65,7 @@ function Portfolio() {
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
           <div>
-            <h1 className="sm:text-4xl text-3xl title-font mb-4 text-amber-100  font-bold inline border-b-4 border-emerald-500 ">
+            <h1 className="sm:text-4xl text-3xl title-font mb-4 text-white font-bold inline border-b-4 border-emerald-500 ">
               Portafolio
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base  py-6">
