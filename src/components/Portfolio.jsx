@@ -5,6 +5,7 @@ import fatefulDungeon from "../assets/portfolio/fatefulDungeon.png";
 import rickAndMorty from "../assets/portfolio/rickAndMorty.png";
 import meteoroClima from "../assets/portfolio/meteoroClima.png";
 import toolKitsCrud from "../assets/portfolio/toolKitsCrud.png";
+import cineapiolis from "../assets/portfolio/CineAPIolis.png"
 
 function Portfolio() {
   const portfolios = [
@@ -57,6 +58,16 @@ function Portfolio() {
       demo: "https://alex-becci.itch.io/fateful-dungeon",
       code: "https://github.com/AlexBecci/Fateful-Dungeon",
       gradient: "to-slate-500",
+    },
+    {
+      text: "Aplicación de Películas con REACT,Tailwind y utilizando la API de the movie database Api",
+      style: "shadow-cyan-500",
+      title: "CineAPIolis",
+      id: 6,
+      src: cineapiolis,
+      demo: "https://peli-api-olis.vercel.app/",
+      code: "https://github.com/AlexBecci/CineAPIolis",
+      gradient: "to-cyan-500",
     },
   ];
 
