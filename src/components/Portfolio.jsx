@@ -120,7 +120,6 @@ function Portfolio() {
             )
           )}
         </div>
-        s
       </div>
     </section>
   );
