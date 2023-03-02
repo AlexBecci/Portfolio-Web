@@ -8,7 +8,7 @@ function Contact() {
     >
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-12">
-          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-amber-100">
+          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
             Contacto
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
