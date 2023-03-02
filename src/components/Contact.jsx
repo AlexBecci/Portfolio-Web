@@ -4,7 +4,7 @@ function Contact() {
   return (
     <div
       name="contact"
-      className="text-zinc-300 body-font relative bg-gradient-to-b from-black to-gray-800"
+      className="text-zinc-300 body-font  bg-gradient-to-b from-black to-gray-800"
     >
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-12">
@@ -12,7 +12,7 @@ function Contact() {
             Contacto
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            {" "}
+            
             envíe el siguiente formulario para ponerse en contacto conmigo
           </p>
         </div>
@@ -23,7 +23,7 @@ function Contact() {
           <div className="lg:w-1/2 md:w-2/3 mx-auto">
             <div className="flex flex-wrap -m-2">
               <div className="p-2 w-1/2">
-                <div className="relative">
+                <div className="">
                   <label
                     for="name"
                     className="leading-7 text-sm text-amber-100"
@@ -40,7 +40,7 @@ function Contact() {
                 </div>
               </div>
               <div className="p-2 w-1/2">
-                <div className="relative">
+                <div className="">
                   <label
                     for="email"
                     className="leading-7 text-sm text-amber-100"
@@ -57,7 +57,7 @@ function Contact() {
                 </div>
               </div>
               <div className="p-2 w-full">
-                <div className="relative">
+                <div className="">
                   <label
                     for="message"
                     className="leading-7 text-sm text-amber-100"

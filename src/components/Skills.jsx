@@ -96,7 +96,7 @@ function Skills() {
   ];
 
   return (
-    <section className="text-zinc-300 body-font bg-gradient-to-b from-gray-800 to-black md:w-screen">
+    <section name='skills' className="text-zinc-300 body-font bg-gradient-to-b from-gray-800 to-black md:w-screen">
       <div className="container px-5 py-24 mx-auto">
         <div className="text-center mb-20">
           <h1 className="sm:text-3xl text-2xl font-medium text-center title-font mb-4 text-amber-50">

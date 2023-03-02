@@ -61,7 +61,7 @@ function Portfolio() {
   ];
 
   return (
-    <section className="text-zinc-300 body-font font0bold bg-gradient-to-b from-black to-gray-800 py-5">
+    <section name='portfolio' className="text-zinc-300 body-font font0bold bg-gradient-to-b from-black to-gray-800 py-5">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
           <div>
