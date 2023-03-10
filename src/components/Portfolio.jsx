@@ -6,18 +6,19 @@ import rickAndMorty from "../assets/portfolio/rickAndMorty.png";
 import meteoroClima from "../assets/portfolio/meteoroClima.png";
 import toolKitsCrud from "../assets/portfolio/toolKitsCrud.png";
 import cineapiolis from "../assets/portfolio/CineAPIolis.png"
+import chatbot from "../assets/portfolio/chatbot.png"
 
 function Portfolio() {
   const portfolios = [
     {
-      text: "Seshat es una plataforma del mundo social basada en narrativas",
-      style: "shadow-indigo-500",
-      title: "Seshat",
+      text: "Aplicacion web que permite comunicarse directamente con la API ChatGPT. OpenAI gpt-3.5-turbo-TailwindCss-react",
+      style: "shadow-zinc-500",
+      title: "Chatbot",
       id: 1,
-      src: seshat,
-      demo: "https://seshat-react.vercel.app/",
-      gradient: "to-indigo-500",
-      code: "https://github.com/SeshatWriters/seshat-react",
+      src: chatbot,
+      demo: "https://chatbot-web-nine.vercel.app/",
+      gradient: "to-zinc-500",
+      code: "https://github.com/AlexBecci/ChatbotWeb",
     },
     {
       text: "Aplicación para monitorizar el tiempo, utilizando la API de OpenWeatherMap",
@@ -69,6 +70,16 @@ function Portfolio() {
       code: "https://github.com/AlexBecci/CineAPIolis",
       gradient: "to-cyan-500",
     },
+    {
+      text: "Seshat es una plataforma del mundo social basada en narrativas",
+      style: "shadow-indigo-500",
+      title: "Seshat",
+      id: 6,
+      src: seshat,
+      demo: "https://seshat-react.vercel.app/",
+      gradient: "to-indigo-500",
+      code: "https://github.com/SeshatWriters/seshat-react",
+    },
   ];
 
   return (
@@ -87,7 +98,7 @@ function Portfolio() {
         <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 px-10">
           {portfolios.map(
             ({ title, id, src, demo, code, style, text, gradient }) => (
-              <div key={id} className="p-4 md:w-1/3 sm:mb-0 mb-6 py-10">
+              <div key={id} className="p-4 sm:w-1/2 lg:w-1/3 sm:mb-0 mb-6 py-10">
                 <div className={`rounded-lg h-64 overflow-hidden  shadow-md ${style}`}>
                   <img
                     alt="content"
