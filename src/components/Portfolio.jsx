@@ -7,18 +7,20 @@ import meteoroClima from "../assets/portfolio/meteoroClima.png";
 import toolKitsCrud from "../assets/portfolio/toolKitsCrud.png";
 import cineapiolis from "../assets/portfolio/CineAPIolis.png"
 import chatbot from "../assets/portfolio/chatbot.png"
+import Challenge from "../assets/portfolio/Challenge.png"
+
 
 function Portfolio() {
   const portfolios = [
     {
-      text: "Aplicacion web que permite comunicarse directamente con la API ChatGPT. OpenAI gpt-3.5-turbo-TailwindCss-react",
-      style: "shadow-zinc-500",
-      title: "Chatbot",
+      text: "Pagina web para un challenge de la empresa Coding&Co ",
+      style: "shadow-indigo-500",
+      title: "Challenge FrontEnd",
       id: 1,
-      src: chatbot,
-      demo: "https://chatbot-web-nine.vercel.app/",
-      gradient: "to-zinc-500",
-      code: "https://github.com/AlexBecci/ChatbotWeb",
+      src: Challenge,
+      demo: "https://challenge-mu-ten.vercel.app/",
+      gradient: "to-indigo-500",
+      code: "https://github.com/AlexBecci/Challenge-FrontEnd",
     },
     {
       text: "Aplicación para monitorizar el tiempo, utilizando la API de OpenWeatherMap",
@@ -74,11 +76,21 @@ function Portfolio() {
       text: "Seshat es una plataforma del mundo social basada en narrativas",
       style: "shadow-indigo-500",
       title: "Seshat",
-      id: 6,
+      id: 7,
       src: seshat,
       demo: "https://seshat-react.vercel.app/",
       gradient: "to-indigo-500",
       code: "https://github.com/SeshatWriters/seshat-react",
+    },
+    {
+      text: "Aplicacion web que permite comunicarse directamente con la API ChatGPT. OpenAI gpt-3.5-turbo-TailwindCss-react",
+      style: "shadow-zinc-500",
+      title: "Chatbot",
+      id: 8,
+      src: chatbot,
+      demo: "https://chatbot-web-nine.vercel.app/",
+      gradient: "to-zinc-500",
+      code: "https://github.com/AlexBecci/ChatbotWeb",
     },
   ];
 
