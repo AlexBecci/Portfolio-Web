@@ -13,15 +13,16 @@ import Challenge from "../assets/portfolio/Challenge.png"
 function Portfolio() {
   const portfolios = [
     {
-      text: "Pagina web para un challenge de la empresa Coding&Co ",
+      text: "Seshat es una plataforma del mundo social basada en narrativas",
       style: "shadow-indigo-500",
-      title: "Challenge FrontEnd",
+      title: "Seshat",
       id: 1,
-      src: Challenge,
-      demo: "https://challenge-mu-ten.vercel.app/",
+      src: seshat,
+      demo: "https://seshat-react-wfqa.vercel.app/",
       gradient: "to-indigo-500",
-      code: "https://github.com/AlexBecci/Challenge-FrontEnd",
+      code: "https://github.com/AlexBecci",
     },
+
     {
       text: "Aplicación para monitorizar el tiempo, utilizando la API de OpenWeatherMap",
       style: "shadow-cyan-500",
@@ -73,14 +74,14 @@ function Portfolio() {
       gradient: "to-cyan-500",
     },
     {
-      text: "Seshat es una plataforma del mundo social basada en narrativas",
+      text: "Pagina web para un challenge de la empresa Coding&Co ",
       style: "shadow-indigo-500",
-      title: "Seshat",
+      title: "Challenge FrontEnd",
       id: 7,
-      src: seshat,
-      demo: "https://seshat-react.vercel.app/",
+      src: Challenge,
+      demo: "https://challenge-mu-ten.vercel.app/",
       gradient: "to-indigo-500",
-      code: "https://github.com/SeshatWriters/seshat-react",
+      code: "https://github.com/AlexBecci/Challenge-FrontEnd",
     },
     {
       text: "Aplicacion web que permite comunicarse directamente con la API ChatGPT. OpenAI gpt-3.5-turbo-TailwindCss-react",
@@ -110,11 +111,11 @@ function Portfolio() {
         <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 px-10">
           {portfolios.map(
             ({ title, id, src, demo, code, style, text, gradient }) => (
-              <div key={id} className="p-4 sm:w-1/2 lg:w-1/3 sm:mb-0 mb-6 py-10">
-                <div className={`rounded-lg h-64 overflow-hidden  shadow-md ${style}`}>
+              <div key={id} className="p-4 sm:w-1/2 lg:w-1/3 sm:mb-0 mb-6 py-4">
+                <div className={`rounded-lg h-64 md:h-1/2 overflow-hidden  shadow-md ${style}`}>
                   <img
                     alt="content"
-                    className="object-cover object-center h-full w-full"
+                    className="object-cover object-center h-full w-full md:p-2 p-1.5"
                     src={src}
                   />
                 </div>
