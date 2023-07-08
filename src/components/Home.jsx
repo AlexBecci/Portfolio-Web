@@ -15,8 +15,7 @@ function Home() {
             TRAINEE/JUNIOR FULLSTACK DEVELOPER
           </h2>
           <p className="text-zinc-300 py-4 max-w-md">
-            Hola! Mi nombre es Alex, soy Full Stack developer, orientado mas al
-            Front-End. Me encanta crear sitios web que brinden una experiencia
+            Hola! Mi nombre es Alex, soy Full Stack developer. Me encanta crear sitios web que brinden una experiencia
             de usuario única y satisfactoria, no solo desde lo visual sino
             también desde lo funcional.
           </p>
