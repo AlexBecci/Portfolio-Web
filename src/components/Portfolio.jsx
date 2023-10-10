@@ -18,7 +18,7 @@ function Portfolio() {
       title: "Seshat",
       id: 1,
       src: seshat,
-      demo: "https://seshat-react-wfqa.vercel.app/",
+      demo: "https://www.seshat.website/",
       gradient: "to-indigo-500",
       code: "https://github.com/AlexBecci",
     },
